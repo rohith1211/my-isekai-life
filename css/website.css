@@ -1,0 +1,107 @@
+body {
+  background-image: url('../images/name2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-color: rgba(197, 220, 231, 0.77);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 100px auto;
+  width: 400px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  font-family: Arial, sans-serif; /* Change to the desired font */
+  font-size: 24px; /* Change to the desired font size */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left; /* Align the form group elements to the left */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif; /* Change to the desired font */
+  font-size: 16px; /* Change to the desired font size */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif; /* Change to the desired font */
+  font-size: 14px; /* Change to the desired font size */
+}
+
+button[type="submit"] {
+  background-color: #4c9daf;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  color: rgba(26, 93, 124, 0.77);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.lines--top {
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  top: 10px;
+  left: -120px;
+}
+
+
+h5 {
+  font-weight: bold;
+  font-family: 'Bahnscript', cursive;
+}
+.p1 {
+  font-weight: bold;
+  font-family: 'Baguette Script', cursive;
+  position: absolute;
+  bottom: 20px;
+  right: 450px;
+  color: rgba(7, 7, 9, 0.847);
+  transition: transform 0.5s; /* Add transition property */
+}
+
+.p2 {
+  font-weight: bold;
+  font-family: 'Baguette Script', cursive;
+  position: absolute;
+  font-size: 17px; 
+  top: 20px;
+  right: 505px;
+  color: rgba(1, 4, 7, 0.715);
+  animation: glowing-text 3s infinite alternate; /* Add animation property */
+}
+
+@keyframes glowing-text {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}

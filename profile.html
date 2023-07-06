@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" type="text/css" href="../css/profile.css">
+</head>
+<body>
+  <a href="../html/dashboard.html" id="backButton">Back to Dashboard</a>
+  <header>
+    <h1>Profile</h1>
+  </header>
+  
+  <form action="http://127.0.0.1:5000/save_profile" method="POST">
+    
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+    
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" required>
+    
+    <label for="nickname">Nickname:</label>
+    <input type="text" name="nickname" id="nickname" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+    
+    <input type="submit" value="Save">
+  
+  </form>
+
+  
+
+  <script src="../js/profile.js"></script>
+  <script>
+    document.getElementById('profileForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+  
+      // Get form data
+      var formData = new FormData(this);
+  
+      // Make a POST request to the API endpoint
+      fetch(this.action, {
+        method: 'POST',
+        body: formData
+      })
+      .then(function(response) {
+        // Handle the response
+        if (response.ok) {
+          // Success
+          alert('Profile saved successfully');
+          // You can redirect to another page or perform any other action here
+        } else {
+          // Error
+          alert('Error saving profile');
+        }
+      })
+      .catch(function(error) {
+        // Error
+        alert('An error occurred');
+        console.error(error);
+      });
+    });
+  </script>
+</body>
+</html>

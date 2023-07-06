@@ -1,0 +1,96 @@
+body {
+  background-image: url('../images/bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: rgba(51, 51, 51, 0.7); /* Transparent background */
+  color: rgb(235, 230, 230);
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(12, 17, 16);
+  padding: 10px;
+}
+
+nav ul li:last-child {
+  margin-left: auto;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Additional styling as per your requirements */
+/* Add your own custom styles here */
+.image-container {
+  display: flex;
+  align-items: end;
+}
+
+.image-container img {
+  margin: 0 20px; /* Adjust the margin as needed */
+  opacity: 1; /* Set transparency */
+}
+.section-header {
+  display: inline;
+}
+
+.section-header h3,
+.section-header p {
+  display: inline;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.section-header::after {
+  content: "-";
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
